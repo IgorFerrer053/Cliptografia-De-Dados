@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criptografia</title>
+    <link rel="stylesheet" href="/stilo.css">
+</head>
+<body>
+
+<main>
+
+<h1>cliptografia de dados</h1>
+<form action="">
+<br/>
+<select name="" id="selecionarCifra">
+<option value="" disabled selected>opções de cifra</option>
+<option value="base64">base64</option>
+<option value="cifra">cifra de César</option>
+</select>
+
+<input id="chaveIncremento" type="number" min="1" max="26" placeholder="chave">
+
+<br/>
+
+<textarea name="" id="texto" cols="30" rows="10" placeholder="digite seu texto"></textarea>
+<br/>
+<textarea id="resposta" disabled></textarea >
+<br/>
+
+<button id="codificar" >codificar msg</button>
+<button id="decodificar">decodificar msg</button>
+</form>
+</main> 
+
+
+
+<script src="/main.js"></script>
+</body>
+</html>
