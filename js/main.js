@@ -7,6 +7,14 @@ const resposta = document.querySelector("#resposta");
 
 
 
+selecionar.addEventListener('click',(e) =>{
+   e .preventDefault()
+      if(selecionar.value == "base64"){
+          chave.style
+      }
+
+})
+
 
 
 codificar.addEventListener("click" ,function (evento) {
