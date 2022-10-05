@@ -7,27 +7,30 @@ const resposta = document.querySelector("#resposta");
 
 
 
-selecionar.addEventListener('click',(e) =>{
-   e .preventDefault()
-      if(selecionar.value == "base64"){
-          chave.style
-      }
 
-})
-
-
-
-codificar.addEventListener("click" ,function (evento) {
+codificar.addEventListener("click" ,function(evento){
   evento.preventDefault()
-  resposta.innerHTML = `${btoa(texto.value)}`;
-  encriptar()
+  
+  if(selecionar.value == "base64"){
+   resposta.innerHTML = `${btoa(texto.value)}`;
+  }
+   if(selecionar.value == "cifra"){
+    encriptar()
+    }
+ 
 })
 
 
-decodificar.addEventListener("click" ,function (evento) {
+decodificar.addEventListener("click" ,function(evento){
     evento.preventDefault()
-    resposta.innerHTML = `${atob(texto.value)}`;
-    desencriptar()
+
+    if(selecionar.value == "base64"){
+        resposta.innerHTML = `${atob(texto.value)}`; 
+       }
+    if(selecionar.value == "cifra"){
+        desencriptar()
+     }
+
   })
   
 
